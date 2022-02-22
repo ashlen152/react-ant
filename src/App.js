@@ -187,6 +187,8 @@ function App() {
             <Card>
               <Search style={{ marginBottom: 8 }} placeholder="Search" />
               <Tree
+              
+                switcherIcon={null}
                 allowDrop={info => info.dropPosition !== 0}
                 showIcon
                 blockNode
