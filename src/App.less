@@ -1,0 +1,30 @@
+@import "~antd/dist/antd.less";
+.App {
+  text-align: center;
+}
+
+.tree-folder {
+  .ant-tree-node-content-wrapper {
+    display: flex;
+    .ant-tree-iconEle {
+      width: 30px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      .tree-icon {
+        font-size: 30px;
+        color: #000;
+      }
+    }
+    .title {
+      text-align: left;
+      font-weight: bolder;
+    }
+    .visible {
+      text-align: left;
+      font-weight: lighter;
+    }
+  }
+}
