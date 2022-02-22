@@ -113,7 +113,8 @@ function App() {
     setNewFolder({
       title: '',
       visible: visibleTypes.everyOne.key,
-      visibleUsers: []
+      visibleUsers: [],
+      key: ''
     })
   }
 
@@ -122,8 +123,10 @@ function App() {
   };
 
   const handleOk = () => {
-    setNewFolder({ ...newFolder, key: data.length + 1 })
-    setData([...data, newFolder])
+    setData([...data, {
+      ...newFolder,
+      key: data.length + 1
+    }])
     clearFormNewFolder();
     setIsModalVisible(false);
   };
